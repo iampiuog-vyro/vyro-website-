@@ -149,3 +149,12 @@ footer.site .copy{color:var(--muted);font-size:13px}
 /* Floating Telegram button (all pages; tg-direct.js handles its clicks) */
 .tg-float{position:fixed;right:16px;bottom:16px;width:52px;height:52px;border-radius:50%;background:var(--grad);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;box-shadow:0 6px 18px rgba(0,0,0,.45);z-index:60}
 .tg-float:hover{text-decoration:none;opacity:.92}
+
+/* Announcement strip (homepage, above the header) */
+.announce{display:block;text-align:center;padding:8px 14px;background:var(--grad);color:#fff;font-size:13.5px;font-weight:600}
+.announce:hover{text-decoration:none;opacity:.94}
+
+/* Telegram QR blocks (About on homepage + Contact page) */
+.qr-block{margin-top:18px}
+.tg-qr{width:110px;height:110px;padding:7px;background:#fff;border-radius:14px}
+.qr-line{color:var(--muted);font-size:13px;margin-top:7px}

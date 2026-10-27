@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a14"/>
+      <stop offset="1" stop-color="#121224"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="185" font-weight="800" letter-spacing="10" fill="url(#brand)">VYRO</text>
+  <text x="600" y="445" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="600" fill="#e8e8f2">Free Android Apps by VYRO</text>
+  <text x="600" y="510" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#a5a5c0">Simple, useful apps — no ads, no tricks.</text>
+  <rect x="460" y="545" width="280" height="8" rx="4" fill="url(#brand)"/>
+</svg>
