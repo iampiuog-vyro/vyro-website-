@@ -120,3 +120,8 @@ footer.site .copy{color:var(--muted);font-size:13px}
   .nav{justify-content:center;text-align:center}
   nav.links{justify-content:center}
 }
+
+/* About panel: small visitor counter tucked into the bottom-right corner */
+.about-panel{position:relative;padding-bottom:50px}
+.visit-pill{position:absolute;right:14px;bottom:12px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border:1px solid var(--card-border);border-radius:999px;background:var(--bg);color:var(--muted);font-size:12px;line-height:1.5;white-space:nowrap}
+.visit-pill[hidden]{display:none}
