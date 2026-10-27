@@ -125,3 +125,27 @@ footer.site .copy{color:var(--muted);font-size:13px}
 .about-panel{position:relative;padding-bottom:50px}
 .visit-pill{position:absolute;right:14px;bottom:12px;display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border:1px solid var(--card-border);border-radius:999px;background:var(--bg);color:var(--muted);font-size:12px;line-height:1.5;white-space:nowrap}
 .visit-pill[hidden]{display:none}
+
+/* Apps search + category chips */
+.apps-tools{max-width:760px;margin:0 auto 14px}
+.app-search{width:100%;padding:11px 16px;border-radius:999px;border:1px solid var(--card-border);background:var(--card);color:var(--text);font-size:15px;outline:none}
+.app-search:focus{border-color:var(--blue)}
+.app-search::placeholder{color:var(--muted)}
+.chip-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{padding:6px 16px;border-radius:999px;border:1px solid var(--card-border);background:transparent;color:var(--muted);font-size:14px;cursor:pointer;font-family:inherit}
+.chip:hover{color:var(--text)}
+.chip.active{background:var(--grad);color:#fff;border-color:transparent}
+.no-apps{max-width:760px;margin:0 auto;text-align:center;color:var(--muted);padding:16px 0 4px}
+.no-apps[hidden]{display:none}
+.app-meta{color:var(--muted);font-size:12.5px;margin-top:2px}
+.new-pill{display:inline-block;vertical-align:2px;margin-left:8px;padding:2px 9px;border-radius:999px;background:var(--grad);color:#fff;font-size:11px;font-weight:700;letter-spacing:.6px}
+
+/* FAQ */
+.faq-list{max-width:760px;margin:0 auto}
+.faq-item{background:var(--card);border:1px solid var(--card-border);border-radius:12px;padding:15px 18px;margin-bottom:10px;text-align:left}
+.faq-item summary{cursor:pointer;font-weight:600}
+.faq-item p{color:var(--muted);margin-top:8px;font-size:15px}
+
+/* Floating Telegram button (all pages; tg-direct.js handles its clicks) */
+.tg-float{position:fixed;right:16px;bottom:16px;width:52px;height:52px;border-radius:50%;background:var(--grad);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;line-height:1;box-shadow:0 6px 18px rgba(0,0,0,.45);z-index:60}
+.tg-float:hover{text-decoration:none;opacity:.92}

@@ -15,6 +15,7 @@
     <nav class="links">
       <a href="index.html">Home</a>
       <a href="index.html#apps">Our Apps</a>
+      <a href="index.html#faq">FAQ</a>
       <a href="index.html#about">About</a>
       <a href="store.html">Pro Packs</a>
       <a href="contact.html">Contact</a>
@@ -34,107 +35,156 @@
     <div class="wrap">
       <h2 class="section-title">Our Apps</h2>
       <p class="section-sub">All VYRO apps are free to use. Download them from our official Telegram channel.</p>
-      <div class="app-list">
-
-        <article class="app-row">
+      <div class="apps-tools">
+        <input type="search" id="appSearch" class="app-search" placeholder="🔍 Search apps…" aria-label="Search apps" autocomplete="off">
+        <div class="chip-row" id="chipRow">
+          <button type="button" class="chip active" data-cat="all">All</button>
+          <button type="button" class="chip" data-cat="ai">AI</button>
+          <button type="button" class="chip" data-cat="tools">Tools</button>
+          <button type="button" class="chip" data-cat="health">Health</button>
+          <button type="button" class="chip" data-cat="fun">Fun</button>
+        </div>
+      </div>
+      <div class="app-list" id="appList">
+        <article class="app-row" data-cat="tools" data-name="v browser">
           <div class="app-icon">🌐</div>
           <div class="app-info">
             <h3>V Browser</h3>
             <p>A fast, private browser with a built-in ad &amp; tracker shield.</p>
+            <p class="app-meta">v1.0 • 225 KB</p>
           </div>
           <a class="btn get" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
         </article>
 
-        <article class="app-row">
+        <article class="app-row" data-cat="ai" data-name="v bot ai">
           <div class="app-icon">🤖</div>
           <div class="app-info">
             <h3>V Bot AI</h3>
             <p>A smart AI chat assistant — bring your own free API key and chat away.</p>
+            <p class="app-meta">v1.7 • 561 KB</p>
           </div>
           <a class="btn get" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
         </article>
 
-        <article class="app-row">
+        <article class="app-row" data-cat="health" data-name="v fit">
           <div class="app-icon">💪</div>
           <div class="app-info">
             <h3>V Fit</h3>
             <p>Personal fitness plans, a workout library and trackers — fully offline.</p>
+            <p class="app-meta">v1.0 • 2.7 MB</p>
           </div>
           <a class="btn get" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
         </article>
 
-        <article class="app-row">
+        <article class="app-row" data-cat="tools" data-name="v science dictionary">
           <div class="app-icon">🔬</div>
           <div class="app-info">
             <h3>V Science Dictionary</h3>
             <p>2,000+ medical &amp; science terms with meanings, made for students.</p>
+            <p class="app-meta">v1.0 • 401 KB</p>
           </div>
           <a class="btn get" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
         </article>
 
-        <article class="app-row">
+        <article class="app-row" data-cat="fun" data-name="v wallpapers ai">
           <div class="app-icon">🖼️</div>
           <div class="app-info">
             <h3>V Wallpapers AI</h3>
             <p>HD wallpapers in many categories — set, download and share in one tap.</p>
+            <p class="app-meta">v1.1 • 2.0 MB</p>
           </div>
           <a class="btn get" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
         </article>
 
-        <article class="app-row">
+        <article class="app-row" data-cat="tools" data-name="v calc">
           <div class="app-icon">🧮</div>
           <div class="app-info">
             <h3>V Calc</h3>
             <p>A calculator with 14 tools: EMI, SIP, FD, BMI, unit converter &amp; more.</p>
+            <p class="app-meta">v1.0 • 217 KB</p>
           </div>
           <a class="btn get" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
         </article>
 
-        <article class="app-row">
+        <article class="app-row" data-cat="tools" data-name="v tts studio">
           <div class="app-icon">🔊</div>
           <div class="app-info">
             <h3>V TTS Studio</h3>
             <p>Turn any text into audio in Hindi, English &amp; more languages.</p>
+            <p class="app-meta">v1.0 • 197 KB</p>
           </div>
           <a class="btn get" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
         </article>
 
-        <article class="app-row">
+        <article class="app-row" data-cat="tools" data-name="v apk extractor">
           <div class="app-icon">📦</div>
           <div class="app-info">
             <h3>V APK Extractor</h3>
             <p>Extract and share the APK file of any installed app in one tap.</p>
+            <p class="app-meta">v1.3 • 109 KB</p>
           </div>
           <a class="btn get" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
         </article>
 
-        <article class="app-row">
+        <article class="app-row" data-cat="ai" data-name="v uncensored ai">
           <div class="app-icon">🔓</div>
           <div class="app-info">
-            <h3>V Uncensored AI</h3>
+            <h3>V Uncensored AI <span class="new-pill">NEW</span></h3>
             <p>Six AI chat sites in one app — chat freely, no sign-ups needed.</p>
+            <p class="app-meta">v1.0 • 525 KB</p>
           </div>
           <a class="btn get" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
         </article>
 
-        <article class="app-row">
+        <article class="app-row" data-cat="ai" data-name="muse ai codes">
           <div class="app-icon">💎</div>
           <div class="app-info">
             <h3>Muse AI Codes</h3>
             <p>Special limited-time codes for Muse AI — tap to copy, with a redeem guide and timer.</p>
+            <p class="app-meta">v1.3 • 289 KB</p>
           </div>
           <a class="btn get" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
         </article>
 
-        <article class="app-row">
+        <article class="app-row" data-cat="health" data-name="v hydrate">
           <div class="app-icon">💧</div>
           <div class="app-info">
-            <h3>V Hydrate</h3>
+            <h3>V Hydrate <span class="new-pill">NEW</span></h3>
             <p>Water-drinking reminders with a daily goal, quick logging, history and streaks — stay hydrated, made simple.</p>
+            <p class="app-meta">v1.0 • 333 KB</p>
           </div>
           <a class="btn get" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
         </article>
+      </div>
+      <p class="no-apps" id="noApps" hidden>No apps found — try a different search.</p>
+    </div>
+  </section>
 
+  <section id="faq">
+    <div class="wrap">
+      <h2 class="section-title">FAQ</h2>
+      <p class="section-sub">Quick answers about VYRO apps.</p>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How do I install a VYRO app?</summary>
+          <p>Get it from our Telegram channel, open the APK file, allow “install from this source” if Android asks, then tap Install.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Are VYRO apps free?</summary>
+          <p>Yes — all VYRO apps are free to use.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Are the apps safe?</summary>
+          <p>Every app is made by VYRO, works on your own device, and most work fully offline. The permissions an app needs are listed on its download post.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do I update an app?</summary>
+          <p>Download the latest version from the Telegram channel and install it over the old one — your data stays.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What is the VYRO Pro Pack?</summary>
+          <p>One pack that unlocks premium extras across VYRO apps — see the Pro Packs page for details.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -179,7 +229,9 @@
   </div>
 </footer>
 
+<a class="tg-float" href="https://t.me/VYRO101" target="_blank" rel="noopener" aria-label="Get our apps on Telegram">✈️</a>
 <script src="tg-direct.js" defer></script>
 <script src="visit-counter.js" defer></script>
+<script src="apps-filter.js" defer></script>
 </body>
 </html>
