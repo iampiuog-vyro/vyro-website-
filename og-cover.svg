@@ -12,6 +12,6 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
   <text x="600" y="330" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="185" font-weight="800" letter-spacing="10" fill="url(#brand)">VYRO</text>
   <text x="600" y="445" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="600" fill="#e8e8f2">Free Android Apps by VYRO</text>
-  <text x="600" y="510" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#a5a5c0">Simple, useful apps — no ads, no tricks.</text>
+  <text x="600" y="510" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="33" fill="#a5a5c0">Simple, useful apps, made to help you.</text>
   <rect x="460" y="545" width="280" height="8" rx="4" fill="url(#brand)"/>
 </svg>
