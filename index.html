@@ -359,10 +359,26 @@
   ]
 }
 </script>
+
+<style>
+.marquee{overflow:hidden;text-align:left;padding-left:0;padding-right:0}
+.marquee-track{display:flex;width:max-content;animation:marquee-scroll 24s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-seq{white-space:nowrap}
+.marquee-seq a{color:#fff;text-decoration:none;margin:0 12px}
+.marquee-seq a:hover{text-decoration:underline}
+@keyframes marquee-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.marquee-track{animation:none}}
+</style>
 </head>
 <body>
 
-<a class="announce" href="https://t.me/VYRO101" target="_blank" rel="noopener">🆕 NEW: V Uncensored AI is here — Get it on Telegram →</a>
+<div class="announce marquee" aria-label="New VYRO apps">
+  <div class="marquee-track">
+    <span class="marquee-seq"><a href="https://t.me/VYRO101" target="_blank" rel="noopener">🆕 V AI Avatar Maker</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">🆕 V AI Image Generator</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">📢 Join Telegram @VYRO101 for all apps</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">🆕 V AI Avatar Maker</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">🆕 V AI Image Generator</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">📢 Join Telegram @VYRO101 for all apps</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">🆕 V AI Avatar Maker</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">🆕 V AI Image Generator</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">📢 Join Telegram @VYRO101 for all apps</a> ✦ </span>
+    <span class="marquee-seq" aria-hidden="true"><a href="https://t.me/VYRO101" target="_blank" rel="noopener">🆕 V AI Avatar Maker</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">🆕 V AI Image Generator</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">📢 Join Telegram @VYRO101 for all apps</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">🆕 V AI Avatar Maker</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">🆕 V AI Image Generator</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">📢 Join Telegram @VYRO101 for all apps</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">🆕 V AI Avatar Maker</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">🆕 V AI Image Generator</a> ✦ <a href="https://t.me/VYRO101" target="_blank" rel="noopener">📢 Join Telegram @VYRO101 for all apps</a> ✦ </span>
+  </div>
+</div>
 
 <header class="site">
   <div class="wrap nav">
