@@ -15,7 +15,8 @@
     var shown = 0;
     rows.forEach(function (row) {
       var name = row.getAttribute('data-name') || '';
-      var catOk = activeCat === 'all' || row.getAttribute('data-cat') === activeCat;
+      var isNew = row.getAttribute('data-new') === '1';
+      var catOk = activeCat === 'all' || (activeCat === 'new' ? isNew : row.getAttribute('data-cat') === activeCat);
       var qOk = !q || name.indexOf(q) !== -1;
       var show = catOk && qOk;
       row.style.display = show ? '' : 'none';

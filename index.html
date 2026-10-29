@@ -8,6 +8,9 @@
 <!-- This site is hosted on Netlify. Anyone can build and deploy a site
      like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=2b524559-9c02-4e0a-b868-eb4ef487224a
      Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=2b524559-9c02-4e0a-b868-eb4ef487224a
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VYRO — Free Android Apps</title>
 <meta name="description" content="Free Android apps by VYRO: a private browser, AI chat assistant, uncensored AI hub, fitness planner, all-in-one calculator, text-to-speech studio, science dictionary, wallpapers &amp; more. Most apps work fully offline.">
@@ -373,6 +376,7 @@
         <input type="search" id="appSearch" class="app-search" placeholder="🔍 Search apps…" aria-label="Search apps" autocomplete="off">
         <div class="chip-row" id="chipRow">
           <button type="button" class="chip active" data-cat="all">All</button>
+          <button type="button" class="chip" data-cat="new">🆕 New</button>
           <button type="button" class="chip" data-cat="ai">AI</button>
           <button type="button" class="chip" data-cat="tools">Tools</button>
           <button type="button" class="chip" data-cat="health">Health</button>
@@ -380,6 +384,36 @@
         </div>
       </div>
       <div class="app-list" id="appList">
+
+        <article class="app-row" data-new="1" data-cat="ai" data-name="v ai avatar maker">
+          <div class="app-icon">🤖</div>
+          <div class="app-info">
+            <h3>V AI Avatar Maker <span class="new-pill">NEW</span></h3>
+            <p>Create stunning AI avatars &amp; DPs — 12 styles for men &amp; women, with your own custom details.</p>
+            <p class="app-meta">v1.0 • 4.2 MB</p>
+          </div>
+          <a class="btn get" aria-label="Get V AI Avatar Maker on Telegram" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
+        </article>
+
+        <article class="app-row" data-new="1" data-cat="ai" data-name="v ai image generator">
+          <div class="app-icon">🎨</div>
+          <div class="app-info">
+            <h3>V AI Image Generator <span class="new-pill">NEW</span></h3>
+            <p>Type anything and watch AI paint it — free image generation with styles, sizes, history &amp; sharing.</p>
+            <p class="app-meta">v1.2 • 4.2 MB</p>
+          </div>
+          <a class="btn get" aria-label="Get V AI Image Generator on Telegram" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
+        </article>
+
+        <article class="app-row" data-new="1" data-cat="tools" data-name="v tube">
+          <div class="app-icon">🎬</div>
+          <div class="app-info">
+            <h3>V Tube <span class="new-pill">NEW</span></h3>
+            <p>Watch YouTube in a clean, fast browser — V Shield toggles, tabs, downloads &amp; Night Mode.</p>
+            <p class="app-meta">v1.0 • 261 KB</p>
+          </div>
+          <a class="btn get" aria-label="Get V Tube on Telegram" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
+        </article>
         <article class="app-row" data-cat="tools" data-name="v browser">
           <div class="app-icon">🌐</div>
           <div class="app-info">
@@ -539,36 +573,6 @@
           </div>
           <a class="btn get" aria-label="Get V Emergency Card on Telegram" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
         </article>
-
-        <article class="app-row" data-cat="tools" data-name="v tube">
-          <div class="app-icon">🎬</div>
-          <div class="app-info">
-            <h3>V Tube <span class="new-pill">NEW</span></h3>
-            <p>Watch YouTube in a clean, fast browser — V Shield toggles, tabs, downloads &amp; Night Mode.</p>
-            <p class="app-meta">v1.0 • 261 KB</p>
-          </div>
-          <a class="btn get" aria-label="Get V Tube on Telegram" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
-        </article>
-
-        <article class="app-row" data-cat="ai" data-name="v ai image generator">
-          <div class="app-icon">🎨</div>
-          <div class="app-info">
-            <h3>V AI Image Generator <span class="new-pill">NEW</span></h3>
-            <p>Type anything and watch AI paint it — free image generation with styles, sizes, history &amp; sharing.</p>
-            <p class="app-meta">v1.2 • 4.2 MB</p>
-          </div>
-          <a class="btn get" aria-label="Get V AI Image Generator on Telegram" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
-        </article>
-
-        <article class="app-row" data-cat="ai" data-name="v ai avatar maker">
-          <div class="app-icon">🤖</div>
-          <div class="app-info">
-            <h3>V AI Avatar Maker <span class="new-pill">NEW</span></h3>
-            <p>Create stunning AI avatars &amp; DPs — 12 styles for men &amp; women, with your own custom details.</p>
-            <p class="app-meta">v1.0 • 4.2 MB</p>
-          </div>
-          <a class="btn get" aria-label="Get V AI Avatar Maker on Telegram" href="https://t.me/VYRO101" target="_blank" rel="noopener">Get</a>
-        </article>
       </div>
       <p class="no-apps" id="noApps" hidden>No apps found — try a different search.</p>
     </div>
@@ -663,5 +667,6 @@
 <script src="apps-filter.js" defer></script>
 </body>
 </html>
+<script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="2b524559-9c02-4e0a-b868-eb4ef487224a" data-app-host="app.netlify.com" data-account-tier="free"></script>
 <script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="2b524559-9c02-4e0a-b868-eb4ef487224a" data-app-host="app.netlify.com" data-account-tier="free"></script>
 <script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="2b524559-9c02-4e0a-b868-eb4ef487224a" data-app-host="app.netlify.com" data-account-tier="free"></script>
