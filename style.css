@@ -171,10 +171,10 @@ footer.site .copy{color:var(--muted);font-size:13px}
 .featured-info>p:not(.featured-tag):not(.app-meta){color:var(--muted);font-size:15px;line-height:1.5}
 .pager{display:flex;align-items:center;justify-content:center;gap:14px;max-width:760px;margin:16px auto 0}
 .pager[hidden]{display:none}
-.pager-btn{width:42px;height:42px;border-radius:50%;border:1px solid var(--card-border);background:var(--card);color:var(--text);font-size:19px;line-height:1;cursor:pointer;font-family:inherit}
+.pager-btn{width:42px;height:42px;border-radius:50%;border:1px solid var(--card-border);background:var(--card);color:var(--text);font-size:19px;line-height:1;cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;padding:0;flex:0 0 auto}
 .pager-btn:hover:not(:disabled){border-color:var(--blue)}
 .pager-btn:disabled{opacity:.35;cursor:default}
-.pager-info{color:var(--muted);font-size:14.5px}
+.pager-info{color:var(--muted);font-size:14.5px;white-space:nowrap;min-width:96px;text-align:center}
 @media (max-width:600px){
   .featured-card{gap:13px;padding:15px}
   .featured-icon{width:60px;height:60px;border-radius:14px}
