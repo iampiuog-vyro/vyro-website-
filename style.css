@@ -181,3 +181,4 @@ footer.site .copy{color:var(--muted);font-size:13px}
   .featured-info h3{font-size:18px}
   .featured-info>p:not(.featured-tag):not(.app-meta){font-size:13.5px}
 }
+.hero .apps-count-line{font-size:17px;font-weight:600;color:var(--text);margin-top:10px}

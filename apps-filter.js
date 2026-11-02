@@ -13,6 +13,8 @@
   if (!list) return;
 
   var rows = Array.prototype.slice.call(list.querySelectorAll('.app-row'));
+  var countEl = document.getElementById('appCount');
+  if (countEl) countEl.textContent = rows.length;
   var PER_PAGE = 10;
   var activeCat = 'all';
   var page = 1;
