@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VYRO</title>
+<meta name="description" content="A VYRO list — useful links and resources from VYRO.">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://vyro101.pages.dev/list.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a0a14">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VYRO">
+<meta property="og:title" content="VYRO">
+<meta property="og:description" content="A VYRO list — useful links and resources from VYRO.">
+<meta property="og:url" content="https://vyro101.pages.dev/list.html">
+<meta property="og:image" content="https://vyro101.pages.dev/og-cover.svg">
+<meta property="og:image:alt" content="VYRO — Free Android Apps">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VYRO">
+<meta name="twitter:description" content="A VYRO list — useful links and resources from VYRO.">
+<meta name="twitter:image" content="https://vyro101.pages.dev/og-cover.svg">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7780106027254382" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class='logo' href='/'>VYRO</a>
+    <nav class="links">
+      <a href='/'>Home</a>
+      <a href='/#apps'>Our Apps</a>
+      <a href='/#faq'>FAQ</a>
+      <a href='/#about'>About</a>
+      <a href='/store'>Pro Packs</a>
+      <a href='/contact'>Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page">
+    <h1 id="listTitle">List</h1>
+    <p class="updated" id="listSub"></p>
+  </div>
+
+  <section style="padding-top:0">
+    <div class="app-list" id="tabList">
+      <p class="no-apps" id="listStatus">Loading…</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap footer-inner">
+    <div class="footer-links">
+      <a href='/'>Home</a>
+      <a href='/store'>Pro Packs</a>
+      <a href='/terms'>Terms &amp; Conditions</a>
+      <a href='/privacy'>Privacy Policy</a>
+      <a href='/refunds'>Cancellation &amp; Refund Policy</a>
+      <a href='/shipping'>Shipping &amp; Delivery Policy</a>
+      <a href='/contact'>Contact Us</a>
+      <a href="https://t.me/VYRO101" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://razorpay.me/@VYRO" target="_blank" rel="noopener">Payments</a>
+    </div>
+    <p class="copy">© 2026 VYRO. Made with ❤️ in India.</p>
+  </div>
+</footer>
+
+<a class="tg-float" href="https://t.me/VYRO101" target="_blank" rel="noopener" aria-label="Get our apps on Telegram">✈️</a>
+<script src="tg-direct.js" defer></script>
+<script>
+// Renders one "page" tab from site-data.json (?tab=<id>): each item is a
+// row with its title, a [Get here] button linking to the item's link, and
+// a "Tips: ..." line under the title — the pattern from Piyush's sketch.
+(function () {
+  var listEl = document.getElementById('tabList');
+  var statusEl = document.getElementById('listStatus');
+  var titleEl = document.getElementById('listTitle');
+
+  function tabHref(tab) {
+    if (!tab) return '#';
+    if (tab.type === 'page') return 'list.html?tab=' + encodeURIComponent(tab.id || '');
+    return tab.url || '#';
+  }
+
+  function renderNav(tabs) {
+    var nav = document.querySelector('header.site nav.links');
+    if (!nav || !tabs || !tabs.length) return;
+    nav.textContent = '';
+    tabs.forEach(function (tab) {
+      var a = document.createElement('a');
+      a.href = tabHref(tab);
+      a.textContent = tab.label || '';
+      nav.appendChild(a);
+    });
+  }
+
+  function showStatus(msg) {
+    listEl.textContent = '';
+    var p = document.createElement('p');
+    p.className = 'no-apps';
+    p.textContent = msg;
+    listEl.appendChild(p);
+  }
+
+  function renderItems(tab) {
+    titleEl.textContent = tab.label || 'List';
+    document.title = (tab.label || 'List') + ' — VYRO';
+    var items = tab.items || [];
+    if (!items.length) {
+      showStatus('No items here yet — check back soon.');
+      return;
+    }
+    listEl.textContent = '';
+    items.forEach(function (item) {
+      var art = document.createElement('article');
+      art.className = 'app-row';
+
+      var info = document.createElement('div');
+      info.className = 'app-info';
+      var h3 = document.createElement('h3');
+      h3.textContent = item.title || '';
+      info.appendChild(h3);
+      if (item.tips) {
+        var tips = document.createElement('p');
+        tips.textContent = 'Tips: ' + item.tips;
+        info.appendChild(tips);
+      }
+      art.appendChild(info);
+
+      if (item.link) {
+        var a = document.createElement('a');
+        a.className = 'btn get';
+        a.href = item.link;
+        a.textContent = 'Get here';
+        if (/^https?:\/\//i.test(item.link)) {
+          a.target = '_blank';
+          a.rel = 'noopener';
+        }
+        art.appendChild(a);
+      }
+      listEl.appendChild(art);
+    });
+  }
+
+  var params = new URLSearchParams(window.location.search);
+  var tabId = params.get('tab') || '';
+
+  fetch('site-data.json', { cache: 'no-store' })
+    .then(function (resp) {
+      if (!resp.ok) throw new Error('site-data.json: HTTP ' + resp.status);
+      return resp.json();
+    })
+    .then(function (data) {
+      if (!data || typeof data !== 'object') throw new Error('bad data');
+      try { renderNav(data.tabs); } catch (e) { /* keep static nav */ }
+      var tab = null;
+      (data.tabs || []).forEach(function (t) {
+        if (t.id === tabId) tab = t;
+      });
+      if (!tab || tab.type !== 'page') {
+        titleEl.textContent = 'List not found';
+        document.title = 'List not found — VYRO';
+        showStatus('This list is not available. Head back to the homepage to explore VYRO apps.');
+        return;
+      }
+      renderItems(tab);
+    })
+    .catch(function () {
+      showStatus('Could not load this list — please check your connection and try again.');
+    });
+})();
+</script>
+</body>
+</html>

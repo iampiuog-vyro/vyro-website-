@@ -1,0 +1,396 @@
+{
+  "version": 1,
+  "heroLine": "Try our {count} free apps",
+  "announcement": "🆕 V AI Avatar Maker ✦ 🆕 V AI Image Generator ✦ 📢 Join Telegram @VYRO101 for all apps ✦",
+  "featuredApp": "v-gpt-ai",
+  "apps": [
+    {
+      "slug": "v-multi-model-ai",
+      "name": "V Multi Model AI",
+      "tagline": "Chat with many AI models in one free app. Pick a model and ask anything — no sign-up needed.",
+      "version": "1.3",
+      "size": "4.0 MB",
+      "category": "ai",
+      "icon": "icon-v-multi-model-ai.png",
+      "isNew": true,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "rainbow-icons",
+      "name": "Rainbow Icons",
+      "tagline": "Give your home screen a fresh look — 80 glossy, colourful icons for your favourite apps. Works with Nova, Lawnchair and other popular launchers.",
+      "version": "1.0",
+      "size": "7.7 MB",
+      "category": "tools",
+      "icon": "icon-rainbow-icons.png",
+      "isNew": true,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-captions",
+      "name": "V Captions",
+      "tagline": "Add captions to any video automatically — made from the speech, fully offline. Pick a caption style, then export the video with captions or save an SRT file.",
+      "version": "1.4",
+      "size": "82.5 MB",
+      "category": "tools",
+      "icon": "icon-v-captions.png",
+      "isNew": true,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-gpt-ai",
+      "name": "V GPT AI",
+      "tagline": "Private AI chat — ask anything, create images, voice chat & upload files. Clean, fast & free.",
+      "version": "1.10",
+      "size": "4.0 MB",
+      "category": "ai",
+      "icon": "icon-v-gpt-ai.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "pdf-maker",
+      "name": "PDF Maker",
+      "tagline": "Turn photos into PDF files — arrange pages, control quality & share anywhere. 100% offline.",
+      "version": "1.0",
+      "size": "213 KB",
+      "category": "tools",
+      "icon": "icon-pdf-maker.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-photo-editor",
+      "name": "V Photo Editor",
+      "tagline": "Edit any photo with AI — remove objects, change backgrounds & restyle, just by typing.",
+      "version": "1.0",
+      "size": "501 KB",
+      "category": "ai",
+      "icon": "icon-v-photo-editor.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-transcript",
+      "name": "V Transcript",
+      "tagline": "Turn any YouTube video into text — copy, edit & translate in 125+ languages",
+      "version": "1.1",
+      "size": "418 KB",
+      "category": "tools",
+      "icon": "icon-v-transcript.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-imagefree",
+      "name": "V ImageFree",
+      "tagline": "Create AI images from text — 100% free & unlimited",
+      "version": "1.3",
+      "size": "549 KB",
+      "category": "ai",
+      "icon": "icon-v-imagefree.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-ai-avatar-maker",
+      "name": "V AI Avatar Maker",
+      "tagline": "Create stunning AI avatars & DPs — 12 styles for men & women, with your own custom details.",
+      "version": "1.0",
+      "size": "4.2 MB",
+      "category": "ai",
+      "icon": "icon-v-ai-avatar-maker.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-ai-image-generator",
+      "name": "V AI Image Generator",
+      "tagline": "Type anything and watch AI paint it — free image generation with styles, sizes, history & sharing.",
+      "version": "1.2",
+      "size": "4.2 MB",
+      "category": "ai",
+      "icon": "icon-v-ai-image-generator.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-tube",
+      "name": "V Tube",
+      "tagline": "Watch YouTube in a clean, fast browser — V Shield toggles, tabs, downloads & Night Mode.",
+      "version": "1.0",
+      "size": "261 KB",
+      "category": "tools",
+      "icon": "icon-v-tube.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-browser",
+      "name": "V Browser",
+      "tagline": "A fast, private browser with a built-in ad & tracker shield.",
+      "version": "1.0",
+      "size": "225 KB",
+      "category": "tools",
+      "icon": "icon-v-browser.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-bot-ai",
+      "name": "V Bot AI",
+      "tagline": "A smart AI chat assistant — bring your own free API key and chat away.",
+      "version": "1.7",
+      "size": "561 KB",
+      "category": "ai",
+      "icon": "icon-v-bot-ai.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-fit",
+      "name": "V Fit",
+      "tagline": "Personal fitness plans, a workout library and trackers — fully offline.",
+      "version": "1.0",
+      "size": "2.7 MB",
+      "category": "health",
+      "icon": "icon-v-fit.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-science-dictionary",
+      "name": "V Science Dictionary",
+      "tagline": "2,000+ medical & science terms with meanings, made for students.",
+      "version": "1.0",
+      "size": "401 KB",
+      "category": "tools",
+      "icon": "icon-v-science-dictionary.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-wallpapers-ai",
+      "name": "V Wallpapers AI",
+      "tagline": "HD wallpapers in many categories — set, download and share in one tap.",
+      "version": "1.1",
+      "size": "2.0 MB",
+      "category": "fun",
+      "icon": "icon-v-wallpapers-ai.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-calc",
+      "name": "V Calc",
+      "tagline": "A calculator with 14 tools: EMI, SIP, FD, BMI, unit converter & more.",
+      "version": "1.0",
+      "size": "217 KB",
+      "category": "tools",
+      "icon": "icon-v-calc.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-tts-studio",
+      "name": "V TTS Studio",
+      "tagline": "Turn any text into audio in Hindi, English & more languages.",
+      "version": "1.0",
+      "size": "197 KB",
+      "category": "tools",
+      "icon": "icon-v-tts-studio.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-apk-extractor",
+      "name": "V APK Extractor",
+      "tagline": "Extract and share the APK file of any installed app in one tap.",
+      "version": "1.3",
+      "size": "109 KB",
+      "category": "tools",
+      "icon": "icon-v-apk-extractor.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-uncensored-ai",
+      "name": "V Uncensored AI",
+      "tagline": "Six AI chat sites in one app — chat freely, no sign-ups needed.",
+      "version": "1.0",
+      "size": "525 KB",
+      "category": "ai",
+      "icon": "icon-v-uncensored-ai.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-hydrate",
+      "name": "V Hydrate",
+      "tagline": "Water-drinking reminders with a daily goal, quick logging, history and streaks — stay hydrated, made simple.",
+      "version": "1.0",
+      "size": "333 KB",
+      "category": "health",
+      "icon": "icon-v-hydrate.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-share",
+      "name": "V Share",
+      "tagline": "Send apps & files phone-to-phone — no internet needed.",
+      "version": "1.0",
+      "size": "125 KB",
+      "category": "tools",
+      "icon": "icon-v-share.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-screen-recorder",
+      "name": "V Screen Recorder",
+      "tagline": "HD screen recording with a floating bubble — no watermark.",
+      "version": "1.0",
+      "size": "161 KB",
+      "category": "tools",
+      "icon": "icon-v-screen-recorder.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-phone-pet",
+      "name": "V Phone Pet",
+      "tagline": "A cute pet that reacts to your screen time.",
+      "version": "1.0",
+      "size": "173 KB",
+      "category": "health",
+      "icon": "icon-v-phone-pet.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-1-minute",
+      "name": "V 1-Minute",
+      "tagline": "Random 1-minute real-life challenges — beat boredom.",
+      "version": "1.0",
+      "size": "157 KB",
+      "category": "fun",
+      "icon": "icon-v-1-minute.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    },
+    {
+      "slug": "v-emergency-card",
+      "name": "V Emergency Card",
+      "tagline": "Your emergency info on the lock screen.",
+      "version": "1.0",
+      "size": "114 KB",
+      "category": "tools",
+      "icon": "icon-v-emergency-card.png",
+      "isNew": false,
+      "link": "https://t.me/VYRO101"
+    }
+  ],
+  "tabs": [
+    {
+      "id": "home",
+      "label": "Home",
+      "type": "link",
+      "url": "/"
+    },
+    {
+      "id": "apps",
+      "label": "Our Apps",
+      "type": "link",
+      "url": "/#apps"
+    },
+    {
+      "id": "faq",
+      "label": "FAQ",
+      "type": "link",
+      "url": "/#faq"
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "type": "link",
+      "url": "/#about"
+    },
+    {
+      "id": "store",
+      "label": "Pro Packs",
+      "type": "link",
+      "url": "/store"
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "type": "link",
+      "url": "/contact"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I install a VYRO app?",
+      "a": "Get it from our Telegram channel, open the APK file, allow “install from this source” if Android asks, then tap Install."
+    },
+    {
+      "q": "Are VYRO apps free?",
+      "a": "Yes — all VYRO apps are free to use."
+    },
+    {
+      "q": "Are the apps safe?",
+      "a": "Every app is made by VYRO, works on your own device, and most work fully offline. The permissions an app needs are listed on its download post."
+    },
+    {
+      "q": "How do I update an app?",
+      "a": "Download the latest version from the Telegram channel and install it over the old one — your data stays."
+    },
+    {
+      "q": "What is the VYRO Pro Pack?",
+      "a": "One pack that unlocks premium extras across VYRO apps — see the Pro Packs page for details."
+    }
+  ],
+  "links": [
+    {
+      "label": "Get our apps on Telegram",
+      "url": "https://t.me/VYRO101"
+    },
+    {
+      "label": "Request an App on Telegram",
+      "url": "https://t.me/VYRO101"
+    },
+    {
+      "label": "Telegram",
+      "url": "https://t.me/VYRO101"
+    },
+    {
+      "label": "Payments",
+      "url": "https://razorpay.me/@VYRO"
+    },
+    {
+      "label": "Pro Packs",
+      "url": "/store"
+    },
+    {
+      "label": "Terms & Conditions",
+      "url": "/terms"
+    },
+    {
+      "label": "Privacy Policy",
+      "url": "/privacy"
+    },
+    {
+      "label": "Cancellation & Refund Policy",
+      "url": "/refunds"
+    },
+    {
+      "label": "Shipping & Delivery Policy",
+      "url": "/shipping"
+    },
+    {
+      "label": "Contact Us",
+      "url": "/contact"
+    }
+  ]
+}

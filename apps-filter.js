@@ -1,6 +1,10 @@
 // Live search + category chips + pagination for the Our Apps list (homepage only).
 // Search matches the app name; chips filter by data-cat; both combine.
 // Matching apps are shown 10 per page; changing search or category resets to page 1.
+//
+// The rows are re-collected by refresh(): site-render.js calls it after it
+// rebuilds the list from site-data.json, so filtering always works on the
+// rows currently in the DOM (rendered or static fallback alike).
 (function () {
   var input = document.getElementById('appSearch');
   var list = document.getElementById('appList');
@@ -12,12 +16,16 @@
   var pagerInfo = document.getElementById('pagerInfo');
   if (!list) return;
 
-  var rows = Array.prototype.slice.call(list.querySelectorAll('.app-row'));
-  var countEl = document.getElementById('appCount');
-  if (countEl) countEl.textContent = rows.length;
   var PER_PAGE = 10;
   var activeCat = 'all';
   var page = 1;
+  var rows = [];
+
+  function collectRows() {
+    rows = Array.prototype.slice.call(list.querySelectorAll('.app-row'));
+    var countEl = document.getElementById('appCount');
+    if (countEl) countEl.textContent = rows.length;
+  }
 
   function matchedRows() {
     var q = input ? input.value.trim().toLowerCase() : '';
@@ -76,5 +84,16 @@
     page++; apply(); scrollToList();
   });
 
+  collectRows();
   apply();
+
+  window.VYRO_APPS = {
+    refresh: function () {
+      collectRows();
+      page = 1;
+      apply();
+    }
+  };
+  // If site-render.js rebuilt the list before this script ran, re-sync now.
+  if (window.__vyroRendered) window.VYRO_APPS.refresh();
 })();
